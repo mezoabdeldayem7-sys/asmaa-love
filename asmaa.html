@@ -1,0 +1,393 @@
+# موقع أسماء – My Love 🌸
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إلى أسماء 🌸</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    color: #873c62;
+    text-align: center;
+    background: linear-gradient(135deg, #fff0f5, #fbd3e2, #fceafa);
+    overflow-x: hidden;
+}
+
+header {
+    padding: 65px 15px 25px;
+    position: relative;
+}
+
+header h1 {
+    font-size: clamp(35px, 8vw, 55px);
+    color: #d34e89;
+    text-shadow: 0 4px 15px #e9a5c5;
+}
+
+header p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 760px;
+    margin: auto;
+    padding: 15px 20px 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.photo-frame {
+    display: inline-block;
+    padding: 10px;
+    background: white;
+    border-radius: 160px 160px 35px 35px;
+    box-shadow: 0 10px 35px #d47ca766;
+    margin: 25px auto;
+    transform: rotate(-2deg);
+}
+
+.photo-frame img {
+    width: 240px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 150px 150px 25px 25px;
+    display: block;
+}
+
+.card {
+    background: #ffffffb8;
+    backdrop-filter: blur(12px);
+    border: 1px solid #ffffff;
+    padding: 30px 22px;
+    margin: 25px 0;
+    border-radius: 30px;
+    box-shadow: 0 8px 30px #d88bac35;
+}
+
+.card h2 {
+    color: #d34e89;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.card p {
+    line-height: 2.2;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    border-radius: 35px;
+    padding: 13px 25px;
+    background: linear-gradient(135deg, #ed82ae, #d34e89);
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 18px;
+    box-shadow: 0 5px 15px #d34e8955;
+    transition: .3s;
+}
+
+button:hover {
+    transform: translateY(-4px) scale(1.04);
+}
+
+input[type="file"],
+input[type="date"] {
+    display: block;
+    max-width: 100%;
+    margin: 15px auto;
+    padding: 12px;
+    border: 1px solid #e9a5c5;
+    border-radius: 15px;
+    background: white;
+    color: #873c62;
+    font-family: inherit;
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#secret {
+    display: none;
+    margin-top: 20px;
+    color: #c43e7a;
+    font-weight: bold;
+}
+
+#surprise {
+    display: none;
+    margin-top: 20px;
+    font-size: 19px;
+    line-height: 2.2;
+    color: #c43e7a;
+}
+
+#counter {
+    font-size: 27px;
+    font-weight: 900;
+    color: #d34e89;
+    margin: 15px;
+}
+
+.butterfly {
+    position: fixed;
+    z-index: 1;
+    pointer-events: none;
+    animation: fly 12s linear infinite;
+    font-size: 28px;
+}
+
+.b1 { top: 15%; left: -50px; }
+.b2 { top: 50%; left: -50px; animation-delay: 4s; }
+.b3 { top: 75%; left: -50px; animation-delay: 8s; }
+
+@keyframes fly {
+    0% {
+        transform: translateX(0) translateY(0) rotate(-15deg);
+    }
+    50% {
+        transform: translateX(55vw) translateY(-45px) rotate(15deg);
+    }
+    100% {
+        transform: translateX(110vw) translateY(20px) rotate(-15deg);
+    }
+}
+
+.petal {
+    position: fixed;
+    top: -30px;
+    z-index: 1;
+    pointer-events: none;
+    animation: falling linear forwards;
+}
+
+@keyframes falling {
+    to {
+        transform: translateY(110vh) rotate(600deg);
+        opacity: 0;
+    }
+}
+
+footer {
+    padding: 35px;
+    color: #bd5885;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="butterfly b1">🦋</div>
+<div class="butterfly b2">🦋</div>
+<div class="butterfly b3">🦋</div>
+
+<header>
+    <h1>أسماء 🌸</h1>
+    <p>فيه حد بيحبك جداً عملك حاجة صغيرة من قلبه ❤️</p>
+</header>
+
+<main class="container">
+
+    <div class="photo-frame">
+        <img src="asmaa.jpg" alt="أسماء">
+    </div>
+
+    <div class="card">
+        <h2>أهلًا بأجمل أسماء 💗</h2>
+        <p>
+            مش كل الناس بتكون مجرد أشخاص في حياتنا،
+            فيه ناس بتكون حكاية جميلة لوحدها...
+            وإنتِ حكاية مختلفة يا أسماء.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>رسالة من قلبي 💌</h2>
+        <p>
+            يمكن الكلام مهما كان جميل مش هيقدر يوصف
+            إحساسي، بس حبيت أعملك حاجة تفضّل
+            تفكرك إن فيه شخص بيتمنالك السعادة
+            وبيفرح لما يشوفك مبسوطة.
+        </p>
+
+        <button onclick="openMessage()">
+            افتحي رسالتك ❤️
+        </button>
+
+        <div id="secret">
+            يا أسماء، إنتِ مش محتاجة تكوني مثالية
+            علشان تكوني مميزة، إنتِ مميزة زي ما إنتِ.
+            ربنا يخلي ضحكتك منورة أيامك دايمًا 🌷
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🎵 أغنيتك المفضلة</h2>
+        <p>اختار الأغنية اللي تحب تسمعها هنا.</p>
+
+        <input type="file" id="musicFile" accept="audio/*">
+
+        <audio id="player" controls>
+            متصفحك لا يدعم تشغيل الصوت.
+        </audio>
+
+        <p style="font-size:12px">
+            اختار ملف MP3 أو أي ملف صوتي من جهازك.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>حكايتنا بدأت إمتى؟ 🌹</h2>
+        <p>اختار تاريخ بداية الحكاية:</p>
+
+        <input type="date" id="startDate">
+
+        <button onclick="calculateDays()">
+            احسب الأيام ❤️
+        </button>
+
+        <div id="counter">💗</div>
+    </div>
+
+    <div class="card">
+        <h2>مفاجأة ليكي 🎁</h2>
+        <p>فيه حاجة مستخبية هنا...</p>
+
+        <button onclick="showSurprise()">
+            اكتشفي المفاجأة 🦋
+        </button>
+
+        <div id="surprise">
+            لو الدنيا كلها ورد، هتفضلي إنتِ
+            أجمل وردة فيها 🌸
+            <br>
+            ودي مجرد بداية لمفاجآت أحلى ❤️
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>كلمة أخيرة ليكي 💗</h2>
+        <p>
+            أتمنى كل أيامك تكون شبه قلبك،
+            مليانة جمال وراحة وفرحة.
+            <br>
+            .خليكِ دايمًا مبتسمة يا أسماء بحبك
+        </p>
+        <div style="font-size:35px;margin-top:15px">
+            🌸🦋💕
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    صُنع بكل الحب ❤️
+    <br>
+      خصيصًا لأسماء
+</footer>
+
+<script>
+
+// الرسالة السرية
+function openMessage() {
+    document.getElementById("secret").style.display = "block";
+}
+
+// المفاجأة
+function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+}
+
+// اختيار الأغنية من الجهاز
+const musicFile = document.getElementById("musicFile");
+const player = document.getElementById("player");
+
+let currentMusicURL = null;
+
+musicFile.addEventListener("change", function() {
+    const file = this.files[0];
+
+    if (file) {
+        if (currentMusicURL) {
+            URL.revokeObjectURL(currentMusicURL);
+        }
+
+        currentMusicURL = URL.createObjectURL(file);
+        player.src = currentMusicURL;
+        player.play().catch(() => {
+            // يمكن الضغط على تشغيل يدويًا
+        });
+    }
+});
+
+// حساب الأيام
+function calculateDays() {
+    const selected = document.getElementById("startDate").value;
+
+    if (!selected) {
+        alert("اختار التاريخ الأول ❤️");
+        return;
+    }
+
+    const start = new Date(selected + "T00:00:00");
+    const today = new Date();
+    today.setHours(0,0,0,0);
+
+    if (start > today) {
+        alert("اختار تاريخًا اليوم أو قبل اليوم 🌸");
+        return;
+    }
+
+    const days = Math.floor(
+        (today - start) / (1000 * 60 * 60 * 24)
+    );
+
+    document.getElementById("counter").innerText =
+        days + " يوم من الذكريات الجميلة ❤️";
+}
+
+// ورود متساقطة
+function createPetal() {
+    const petal = document.createElement("div");
+    petal.className = "petal";
+
+    const flowers = ["🌸","🌷","💕","🌺"];
+    petal.innerText = flowers[
+        Math.floor(Math.random() * flowers.length)
+    ];
+
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.fontSize = (14 + Math.random() * 16) + "px";
+    petal.style.animationDuration = (5 + Math.random() * 6) + "s";
+
+    document.body.appendChild(petal);
+
+    setTimeout(() => petal.remove(), 11000);
+}
+
+setInterval(createPetal, 700);
+
+</script>
+
+</body>
+</html>
+```
+
